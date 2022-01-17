@@ -20,7 +20,7 @@ const {
 } = require("react-native/Libraries/Components/ScrollView/ScrollViewContext");
 const {
   Mixin: ScrollResponderMixin,
-} = require("react-native/Libraries/Components/ScrollResponder");
+} = require("./ScrollResponder");
 const ScrollViewStickyHeader = require("react-native/Libraries/Components/ScrollView/ScrollViewStickyHeader");
 const {
   default: processDecelerationRate,
