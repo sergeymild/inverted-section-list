@@ -8,24 +8,24 @@
  * @flow
  */
 
-const Dimensions = require('../Utilities/Dimensions');
-const FrameRateLogger = require('../Interaction/FrameRateLogger');
-const Keyboard = require('./Keyboard/Keyboard');
-const Platform = require('../Utilities/Platform');
+const Dimensions = require('react-native/Libraries/Utilities/Dimensions');
+const FrameRateLogger = require('react-native/Libraries/Interaction/FrameRateLogger');
+const Keyboard = require('react-native/Libraries/Components/Keyboard/Keyboard');
+const Platform = require('react-native/Libraries/Utilities/Platform');
 const React = require('react');
-const ReactNative = require('../Renderer/shims/ReactNative');
-const TextInputState = require('./TextInput/TextInputState');
-const UIManager = require('../ReactNative/UIManager');
+const ReactNative = require('react-native/Libraries/Renderer/shims/ReactNative');
+const TextInputState = require('react-native/Libraries/Components/TextInput/TextInputState');
+const UIManager = require('react-native/Libraries/ReactNative/UIManager');
 
 const invariant = require('invariant');
 
-import type {HostComponent} from '../Renderer/shims/ReactNativeTypes';
-import type {PressEvent, ScrollEvent} from '../Types/CoreEventTypes';
-import {type EventSubscription} from '../vendor/emitter/EventEmitter';
-import type {KeyboardEvent} from './Keyboard/Keyboard';
-import typeof ScrollView from './ScrollView/ScrollView';
-import type {Props as ScrollViewProps} from './ScrollView/ScrollView';
-import Commands from './ScrollView/ScrollViewCommands';
+import type {HostComponent} from 'react-native/Libraries/Renderer/shims/ReactNativeTypes';
+import type {PressEvent, ScrollEvent} from 'react-native/Libraries/Types/CoreEventTypes';
+import {type EventSubscription} from 'react-native/Libraries/vendor/emitter/EventEmitter';
+import type {KeyboardEvent} from 'react-native/Libraries/Components/Keyboard/Keyboard';
+import typeof ScrollView from 'react-native/Libraries/Components/ScrollView/ScrollView';
+import type {Props as ScrollViewProps} from 'react-native/Libraries/Components/ScrollView/ScrollView';
+import Commands from 'react-native/Libraries/Components/ScrollView/ScrollViewCommands';
 
 /**
  * Mixin that can be integrated in order to handle scrolling that plays well
